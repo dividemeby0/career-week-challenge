@@ -3,6 +3,12 @@
   justify-content: space-around;
 }
 
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .temperature-container {
   display: flex;
   flex-direction: column;
@@ -17,4 +23,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.celebrities-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.one-celeb-container {
+  display: flex;
+  align-items: center;
+  margin: 25px;
+}
+
+.one-celeb-container img {
+  height: 120px;
+  margin-right: 20px;
 }

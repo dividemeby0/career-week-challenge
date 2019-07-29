@@ -18,9 +18,11 @@ export default class Temperature extends Component {
           step="1"
           placeholder="Temperature in °C"
           onChange={this.handleChange}
-          defaultValue="null"
+          defaultValue={this.state.temperature}
         />
-        {this.state.temperature < 10 ? (
+        {this.state.temperature === null ? (
+          ""
+        ) : this.state.temperature < 10 ? (
           <p style={{ color: "blue" }}>
             It's cold{" "}
             <img
